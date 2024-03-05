@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+<html lang="es">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body> 
+    <header>
+        <div class="encabezado">
+            <img class="logoAlura" src="imagenes/logoAlura" alt="Este es el logo del programa ONE">
+            <h1>Bienvenido al encriptador de texto G6 - ONE</h1>
+        </div>
+    </header> 
+    <main class="container">
+        <section class="mitad-uno">
+            <textarea class="campo-texto" type="text" id="textoEncriptado" placeholder="Ingrese el texto aquí"></textarea>
+            <p>ⓘ Solo letras minúsculas y sin acentos</p>
+            <div class="botones">
+                <input class="cifrar" type="submit" value="Cifrar" onclick="btnEncriptar()">
+                <input class="desifrar" type="submit" value="Desifrar" onclick="btnDesencriptar()">
+            </div>
+        </section>
+        <section class="mitad-dos">
+                <textarea class="mensaje" type="text" id="mensaje_encriptado"></textarea>
+            <div class="botones">
+             <input id="boton-copiar" class="copiar" type="submit" value="Copiar" onclick="btncopiar()">
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <div>
+            © Luz Adriana Martínez Castañeda 2024
+        </div>
+    </footer>
+</body>
+</html>
